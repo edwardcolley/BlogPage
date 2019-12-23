@@ -1,0 +1,254 @@
+body {
+    height: 100%;
+    font-family: 'Roboto';
+    background-color:#E3E3E3;
+}
+
+#banner {
+    height: 50vh;
+    background-image: url('../assets/Blog_Header_Blue.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: 100% 400px;
+    /* font-family: Verdana, sans-serif; */
+}
+
+/* The Modal (background) */
+.sign-up-modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .sign-up-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+    border-radius: 15px;
+    height: 70vh;
+  }
+  
+  /* The Close Button */
+  .sign-up-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .sign-up-modal-close:hover,
+  .sign-up-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .no-display {
+    display: none; /*Hidden by default*/
+  }
+
+  .display-block {
+      display: block;
+  }
+
+  .border-top-style {
+    border-top: 2px solid black;
+  }
+
+  #sign-up-button {
+    background-color:#033E5B;
+    margin-top:.75em;
+    margin-bottom:.75em;
+    width:160px;
+  }
+
+  #sign-up-button:hover {
+    background-color: #035d75;
+  }
+
+  #sign-up-button:active {
+    background-color:#023341;
+  }
+
+  #set-preferences-btn {
+    padding: .5em 2.5em;
+    background-color:#40AD8F; 
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+  }
+
+  #set-preferences-btn:hover {
+    background-color: rgb(71, 207, 169);
+  }
+
+  #set-preferences-btn:active {
+    background-color: rgb(73, 190, 157);
+  }
+
+  .sign-up-container {
+   width: 80%;
+  }
+
+  .checkboxgroup {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .checkboxgroup label {
+    display: block;
+  }
+
+  input {
+    cursor: pointer;
+  }
+
+  .roboto-light {
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: .8rem
+  }
+
+  .roboto-bold {
+    font-family: Roboto;
+    font-weight: 500;
+    color: #3D3D3D;
+  }
+
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  #page-sign-up-modal {
+    z-index: 2000;
+  }
+
+  #sign-up-bar-mobile,
+  #sign-up-bar-desktop {
+
+    display:flex;
+    align-items:center;
+  }
+
+  #sign-up-bar-desktop {
+    background-color:#40AD8F;
+  }
+
+  #sign-up-bar-header {
+    background-color:#40AD8F;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    border: 4px solid #40AD8F
+  }
+
+  #sign-up-bar-mobile {
+
+    margin-bottom: 1em;
+    overflow:hidden;
+    transition: transform 0.3s ease-out;
+    height: auto;
+    transform: scaleY(1);
+    transform-origin:top;
+  }
+
+  #collapsible {
+    background-color:#40AD8F;
+    overflow:hidden;
+    transition: transform 0.3s ease-out;
+    height: auto;
+    transform: scaleY(1);
+    transform-origin:top;
+  }
+
+  .display-none {
+    /* display: none; */
+    transform:scaleY(0) !important;
+    /* height:0 !important; */
+  }
+
+  .display-block {
+    display: block;
+  }
+
+  /*Mobile Portrait */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) { 
+
+  #sign-up-bar-desktop {
+    display: none
+  }
+
+  .article-column-mobile {
+    margin-left: 0;
+  }
+
+}
+
+  /*Mobile Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) { 
+
+  #sign-up-bar-desktop {
+    display: none
+  }
+
+  .article-column-mobile {
+    margin-left: 0;
+  }
+
+}
+
+/*Tablet Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #sign-up-bar-desktop {
+      display: none
+    }
+
+}
+
+
+/*Tablet Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #sign-up-bar-mobile {
+      display: none;
+    }
+
+}
+
+
+/*Laptop and above */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    #sign-up-bar-mobile {
+      display:none;
+    }
+}
